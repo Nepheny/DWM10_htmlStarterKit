@@ -1,10 +1,19 @@
-                    /* Selector for balises */
+/* General */
+*{
+    font-family: 'Lato', sans-serif;
+}
+/* Selector for balises */
 header{
     height: 60px;
     background-color: #D9B488;
 }
+main{
+    min-height: 85vh;
+    margin: 20px 0;
+}
 footer{
     height: 60px;
+    background-color: #D9B488;
 }
 .p-base{
     width: 650px;
@@ -29,7 +38,6 @@ footer{
     padding: 0 10px;
     color: black;
     text-decoration: none;
-    text-transform: uppercase;
 }
 .full-height{
     height: 100%;
@@ -46,6 +54,11 @@ footer{
 .list-no-style{
     list-style: none;
 }
+/* Selector for id */
+#logo-title{
+    text-transform: uppercase;
+}
+
                     /* Complex selectors */
 .image-container>img{
     max-width: 100%;
