@@ -1,9 +1,18 @@
+                    /* Selector for balises */
 header{
     height: 60px;
+    background-color: #D9B488;
 }
 footer{
     height: 60px;
-    border-top: solid 1px grey;
+}
+.p-base{
+    width: 650px;
+    text-align: justify;
+}
+                    /* Selector for classes*/
+.image-container{
+    width: 500px;
 }
 .flex-base{
     display: flex;
@@ -12,6 +21,9 @@ footer{
 }
 .flex-center{
     align-items: center;
+}
+.flex-coloumn{
+    flex-direction: column;
 }
 .footer-buttons>li{
     padding: 0 10px;
@@ -27,6 +39,18 @@ footer{
     text-decoration: none;
     text-transform: uppercase;
 }
+.no-padding-margin{
+    margin: 0;
+    padding: 0;
+}
+.list-no-style{
+    list-style: none;
+}
+                    /* Complex selectors */
+.image-container>img{
+    max-width: 100%;
+    height: auto;
+}
 .menu-buttons>li>a, .footer-buttons>li>a{
     color: black;
     padding: 0 10px;
@@ -37,11 +61,4 @@ footer{
     border-radius: 1px;
     background-color: black;
     color: white;
-}
-.no-padding-margin{
-    margin: 0;
-    padding: 0;
-}
-.list-no-style{
-    list-style: none;
 }
