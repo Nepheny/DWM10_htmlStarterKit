@@ -21,7 +21,9 @@ function checkVictory(divs){
         }
     }
     if(victoryStatus){
-        alert('Vous avez gagné');     
+        setTimeout(function(){
+            alert('Vous avez gagné'); 
+        }, 500);  
     }
 };
 
