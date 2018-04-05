@@ -109,6 +109,35 @@ footer{
     border-radius: 1px;
     background-color: #C98058;
 }
+.green-color{
+    background-color: green!important;
+}
+.red-color{
+    background-color: red!important;
+}
+.game-button{
+    background-image: url('images/sitePattern.png');
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.5);
+    padding: 10px;
+}
+.game-button-2{
+    background-image: url('images/sitePattern.png');
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+    padding: 10px;
+}
+.game-button-2:hover{
+    background-image: url('images/sitePattern.png');
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+    padding: 10px;
+}
 #game-container{
     display: flex;
     flex-direction: row;
@@ -122,9 +151,10 @@ footer{
 #game-container>div:hover{
     cursor: pointer;
 }
-.green-color{
-    background-color: green!important;
-}
-.red-color{
-    background-color: red!important;
+#score{
+    background-image: url('images/sitePattern.png');
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.5);
+    padding: 10px;
 }
