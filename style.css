@@ -1,42 +1,17 @@
-/* General */
+                                    /* GENERAL */
 *{
     font-family: 'Lato', sans-serif;
 }
-/* Selector for balises */
 body{
-    background-image: url('images/sitePattern.png');
-}
-header{
-    height: 60px;
-    background-color: #E08D60;
-    top: 0;
-    border: 1px solid #C98058;
+    background-image: url('assets/imgs/sitePattern.png');
 }
 main{
     margin: 80px 0 20px 0;
-}
-footer{
-    height: 60px;
-}
-                    /* Selector for classes*/
-.base-cards{
-    padding: 20px;
-    margin: 20px;
-    background-image: url('images/cardPattern.png');
-    border: 1px solid rgba(0,0,0,0.10);
-    box-shadow: 0px 5px 25px 6px rgba(0,0,0,0.10);
 }
 .flex-base{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-.rounded-img{
-    border-radius: 8px;
-}
-.image-container{
-    width: 450px;
-    margin-bottom: 20px;
 }
 .flex-row-alternate{
     flex-direction: row-reverse;
@@ -53,22 +28,9 @@ footer{
 .full-width{
     width: 90%;
 }
-.p-full-width{
-    width: 850px;
-    text-align: justify;
-}
-.p-base{
-    width: 500px;
-    text-align: justify;
-}
 .position-fixed{
     position: fixed;
     width: 100%;
-}
-.menu-buttons>li{
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 .no-padding-margin{
     margin: 0;
@@ -77,38 +39,53 @@ footer{
 .list-no-style{
     list-style: none;
 }
-/* Selector for id */
-.footer-buttons>li{
-    padding: 0 10px;
-    color: rgba(0,0,0,0.65);
-    text-decoration: none;
-}
 .link-no-style{
     text-decoration: none;
     color: inherit;
+}
+
+
+
+                                    /* HEADER */
+header{
+    height: 60px;
+    background-color: #E08D60;
+    top: 0;
+    border: 1px solid #C98058;
+}
+.destroy-button-nav{
+    background-color: #E08D60;
+    border: 1px solid #C98058;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu-buttons>li{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu-buttons>li>a{
+    color: black;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu-buttons>li>a:hover{
+    border-radius: 1px;
+    background-color: #C98058;
 }
 #logo-title{
     text-transform: uppercase;
     color: black;
 }
-#link-footer{
-    color: rgba(0,0,0,0.65);    
-}
-                    /* Complex selectors */
-.image-container>img{
-    max-width: 100%;
-    height: auto;
-}
-.menu-buttons>li>a, .footer-buttons>li>a{
-    color: black;
-    padding: 0 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.menu-buttons>li>a:hover, .footer-buttons>li>a:hover{
-    border-radius: 1px;
-    background-color: #C98058;
-}
+
+
+                                    /* GAME */
 .green-color{
     background-color: green!important;
 }
@@ -116,14 +93,14 @@ footer{
     background-color: red!important;
 }
 .game-button{
-    background-image: url('images/sitePattern.png');
+    background-image: url('assets/imgs/sitePattern.png');
     border: 1px solid lightgray;
     border-radius: 5px;
     box-shadow: inset 1px 1px 1px rgba(0,0,0,0.5);
     padding: 10px;
 }
 .game-button-2{
-    background-image: url('images/sitePattern.png');
+    background-image: url('assets/imgs/sitePattern.png');
     border: 1px solid lightgray;
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
@@ -131,7 +108,7 @@ footer{
     padding: 10px;
 }
 .game-button-2:hover{
-    background-image: url('images/sitePattern.png');
+    background-image: url('assets/imgs/sitePattern.png');
     border: 1px solid lightgray;
     border-radius: 5px;
     box-shadow: inset 1px 1px 1px rgba(0,0,0,0.5);
@@ -152,9 +129,150 @@ footer{
     cursor: pointer;
 }
 #score{
-    background-image: url('images/sitePattern.png');
+    background-image: url('assets/imgs/sitePattern.png');
     border: 1px solid lightgray;
     border-radius: 5px;
     box-shadow: inset 1px 1px 1px rgba(0,0,0,0.5);
     padding: 10px;
 }
+
+
+                                    /* CARDS */
+.rounded-img{
+    border-radius: 8px;
+}
+.image-container{
+    width: 450px;
+    margin-bottom: 20px;
+}
+.base-cards{
+    padding: 20px;
+    margin: 20px;
+    background-image: url('assets/imgs/cardPattern.png');
+    border: 1px solid rgba(0,0,0,0.10);
+    box-shadow: 0px 5px 25px 6px rgba(0,0,0,0.10);
+}
+.p-full-width{
+    width: 850px;
+    text-align: justify;
+}
+.p-base{
+    width: 500px;
+    padding: 10px;
+    text-align: justify;
+}
+.image-container>img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+                                    /* FOOTER */
+footer{
+    height: 60px;
+}
+.footer-buttons>li{
+    padding: 0 10px;
+    color: rgba(0,0,0,0.65);
+    text-decoration: none;
+}
+ .footer-buttons>li>a{
+    color: black;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.footer-buttons>li>a:hover{
+    border-radius: 1px;
+    background-color: #C98058;
+}
+#link-footer{
+    color: rgba(0,0,0,0.65);    
+}
+
+
+                                    /* UNDER 400PX */
+@media screen and (max-width: 400px) {
+    nav {
+        display: none!important;
+    }
+    .flex-wrap{
+    flex-wrap: wrap;
+}
+    .p-full-width {
+        max-width: 300px;
+    }
+    .footer-buttons {
+        font-size: 10px;
+    }
+    #logo-title {
+        font-size: 20px;
+    }
+    #game-container>div {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+                               /* UNDER 550px */
+@media screen and (max-width: 550px) and (min-width: 401px) {
+    nav {
+        display: none!important;
+    } 
+    .flex-wrap{
+    flex-wrap: wrap;
+}
+    .p-full-width {
+        max-width: 400px;
+    }
+    .footer-buttons {
+        font-size: 12px;
+    }
+    #logo-title {
+        font-size: 20px;
+    }
+    #game-container>div {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+                                    /* UNDER 768px */
+@media screen and (max-width: 768px) and (min-width: 551px) {
+    .menu-buttons>li>a {
+        font-size: 12px;
+    }
+    .flex-wrap{
+    flex-wrap: wrap;
+}
+    .p-full-width {
+        max-width: 500px;
+    }
+    #logo-title {
+        font-size: 24px;
+    }
+    #game-container>div {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+
+                                    /* UNDER 992px */
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    .menu-buttons>li>a {
+        font-size: 16px;
+    }
+    .flex-wrap{
+    flex-wrap: wrap;
+}
+    .p-full-width {
+        max-width: 700px;
+    }
+    #logo-title {
+        font-size: 28px;
+    }
+}
+
+
+                                    /* AFTER 993px */

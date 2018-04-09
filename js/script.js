@@ -1,6 +1,18 @@
 document.querySelector('[data-action="destroy"]').addEventListener('click', function(){
-    debugger;
+    document.querySelector('body').classList.add('cross');
+    document.addEventListener('click',function(el){
+        el.target.outerHTML = "";
+    })
+    setInterval(spawnJCVD, 200);
 });
+function spawnJCVD(){
+    let jcvd = document.createElement('img');
+    jcvd.setAttribute('src', './assets/imgs/shooting.gif');
+    jcvd.style.position = "absolute";
+    jcvd.style.top = Math.floor(Math.random() * Math.floor(screen.height)) + 'px';
+    jcvd.style.left = Math.floor(Math.random() * Math.floor(screen.width)) + 'px';
+    document.querySelector('body').appendChild(jcvd);
+};
 
 // Select the div via it's id and store the selected element
 // inside gameContainer var.
@@ -96,8 +108,6 @@ function load() {
     for (var i = 0; i < childDivs.length; i++) {
       childDivs[i].className = gameStatusJson[i];
     }
-  } else {
-    console.log('Ya rien');
   }
 }
 function checkDefeat() {
